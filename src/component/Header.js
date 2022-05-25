@@ -23,6 +23,10 @@ const Header = () => {
             <Link to="/search" class="nav-link">Searchstudent</Link>
          
         </li>
+        <li class="nav-item">
+            <Link to="/faculty" class="nav-link">Addfaculty</Link>
+         
+        </li>
         
       </ul>
     </div>
