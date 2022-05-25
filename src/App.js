@@ -6,6 +6,7 @@ import  'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Searchstudent from './component/Searchstudent';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Addfaculty from './component/Addfaculty';
+import Searchfaculty from './component/Searchfaculty';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" exact element={<Addstudent/>}/>
       <Route path="/search" exact element={<Searchstudent/>}/>
       <Route path="/faculty" exact element={<Addfaculty/>}/>
+      <Route path="/fsearch" exact element={<Searchfaculty/>}/>
 
 
 
