@@ -6,7 +6,7 @@ const Header = () => {
     <div>
 
 
-<nav class="navbar navbar-expand-lg bg-warning">
+<nav class="navbar navbar-expand-lg bg-success">
   <div class="container-fluid">
       <Link to="/" class="navbar-brand" >HOME</Link>
     
@@ -29,6 +29,10 @@ const Header = () => {
         </li>
         <li class="nav-item">
             <Link to="/fsearch" class="nav-link">Searchfaculty</Link>
+         
+        </li>
+        <li class="nav-item">
+            <Link to="/sview" class="nav-link">Viewstudent</Link>
          
         </li>
         
