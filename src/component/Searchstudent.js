@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from './Header'
 
 const Searchstudent = () => {
     var [admno,setAdmno]=useState("")
@@ -9,6 +10,7 @@ const Searchstudent = () => {
     }
   return (
     <div>
+        <Header/>
 
 <div className="container">
     <div className="row">
