@@ -35,6 +35,10 @@ const Header = () => {
             <Link to="/sview" class="nav-link">Viewstudent</Link>
          
         </li>
+        <li class="nav-item">
+            <Link to="/fview" class="nav-link">Viewfaculty</Link>
+         
+        </li>
         
         
       </ul>
