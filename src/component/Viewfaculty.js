@@ -3,6 +3,20 @@ import React, { useState } from 'react'
 import Header from './Header'
 
 const Viewfaculty = () => {
+  const deleteapicall=(id)=>{
+    const data={"_id":id}
+    console.log(data)
+    axios.post("http://localhost:7000/api/deletefaculty",data).then((Response)=>{
+        if(Response.data.status=="success")
+        {
+            alert("successfully deleted")
+        }
+        else{
+            alert("error in deletion")
+        }
+    })
+}
+
 
  
 
@@ -49,6 +63,9 @@ const Viewfaculty = () => {
           <td>{value.address}</td>
           <td>{value.pincode}</td>
           <td>{value.district}</td>
+          <td>  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button onClick={()=>{deleteapicall(value._id)}} class="btn btn-danger">DELETE</button>
+                </div></td>
           
           
         </tr>
