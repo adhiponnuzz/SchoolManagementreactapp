@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import Header from './Header'
 
@@ -11,8 +12,21 @@ const Addfaculty = () => {
 
     const subData=()=>{
 
-        const data={"Name":name,"Education":education,"Mobile":mobile,"Address":address,"Pincode":pincode,"District":district}
+        const data={"name":name,"education":education,"mobile":mobile,"address":address,"pincode":pincode,"district":district}
         console.log(data)
+
+        axios.post("http://localhost:7000/api/addfaculty",data).then((Response)=>{
+            console.log(Response.data)
+            if(Response.data.status=="success")
+            {
+                alert("successfully added")
+            }
+            else{
+                alert("failed to added")
+            }
+            
+
+        })
     }
 
 
