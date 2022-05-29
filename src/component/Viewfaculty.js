@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import Header from './Header'
 
 const Viewfaculty = () => {
+
+ 
+
     var [facultylist,setfacultylist]=useState([])
     var [loadstatus,setloadstatus]=useState(true)
 
@@ -46,6 +49,7 @@ const Viewfaculty = () => {
           <td>{value.address}</td>
           <td>{value.pincode}</td>
           <td>{value.district}</td>
+          
           
         </tr>
 
